@@ -2,7 +2,24 @@ import Groq from 'groq-sdk';
 import { queryLayer } from './queryLayer';
 import { db, DbUser, DbHoliday } from './db';
 
-const CURRENT_DATE = '2026-09-22'; // Reference date from system prompt
+function getTodayIso(): string {
+  const d = new Date();
+  const year = d.getFullYear();
+  const month = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+function getTomorrowIso(): string {
+  const d = new Date();
+  d.setDate(d.getDate() + 1);
+  const year = d.getFullYear();
+  const month = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+const CURRENT_DATE = getTodayIso();
 
 function getGroqClient(): Groq | null {
   const apiKey = process.env.GROQ_API_KEY;
@@ -156,10 +173,10 @@ function resolveDateFromQuestion(question: string): { date?: string; month?: num
     return { month: currentMonth === 12 ? 1 : currentMonth + 1, year: currentMonth === 12 ? currentYear + 1 : currentYear };
   }
   if (lower.includes('today')) {
-    return { date: CURRENT_DATE, month: currentMonth, year: currentYear };
+    return { date: getTodayIso(), month: currentMonth, year: currentYear };
   }
   if (lower.includes('tomorrow')) {
-    return { date: '2026-09-23', month: currentMonth, year: currentYear };
+    return { date: getTomorrowIso(), month: currentMonth, year: currentYear };
   }
 
   return { month: currentMonth, year: currentYear };
@@ -338,16 +355,21 @@ export async function processChatWithAI(
   }
 
   try {
+    const now = new Date();
+    const currentDateStr = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    const currentIso = getTodayIso();
+    const currentTimeStr = now.toLocaleTimeString('en-US');
+
     const systemInstruction = `You are an intelligent calendar AI assistant for a calendar web app.
-The current date is Tuesday, September 22, 2026 (2026-09-22).
+The current real-time date is ${currentDateStr} (${currentIso}) and current time is ${currentTimeStr}.
 The currently authenticated user is ${user.name} (email: ${user.email}, ID: ${user.id}).
 
 CRITICAL INSTRUCTIONS:
 1. You MUST call tools to retrieve REAL calendar data before answering questions about holidays, schedules, or events.
 2. NEVER guess, invent, or hallucinate event or holiday dates or counts.
-3. For questions like "How many holidays are there this month?" or "Any holidays in October?", call 'count_holidays' or 'get_holidays' with month and year.
-4. For questions like "What events do I have on the 15th?", call 'check_day_schedule' or 'get_user_events' with date="2026-09-15".
-5. For "today", reference date is 2026-09-22.
+3. For questions like "How many holidays are there this month?" or "Any holidays in October?", call 'count_holidays' or 'get_holidays' with month and year based on the current date (${currentIso}).
+4. For questions like "What events do I have on the 15th?", check the day's schedule using the appropriate date for the active month.
+5. For "today", reference date is ${currentIso}.
 6. When the user asks to schedule an event (e.g. "Add a team sync on Friday at 2pm"), call 'add_calendar_event'.
 7. After receiving tool output, respond warmly and clearly with the exact computed facts. Mention the count and specific titles/dates computed. Format nicely with markdown bolding and bullet points.`;
 

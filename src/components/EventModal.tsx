@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { X, ArrowLeft, Trash2, Clock, MapPin, AlignLeft, Calendar as CalendarIcon, Tag } from 'lucide-react';
 import { CalendarEvent, EventCategory } from '../types';
 import { CATEGORY_CONFIG } from '../lib/categoryConfig';
+import { TODAY_ISO } from '../lib/dateUtils';
 
 interface EventModalProps {
   isOpen: boolean;
@@ -42,11 +43,16 @@ export const EventModal: React.FC<EventModalProps> = ({
       setLocation(initialEvent.location || '');
       setDescription(initialEvent.description || '');
     } else {
+      const now = new Date();
+      const curHour = now.getHours();
+      const defStartTime = `${String(curHour).padStart(2, '0')}:00`;
+      const defEndTime = `${String((curHour + 1) % 24).padStart(2, '0')}:00`;
+
       setTitle('');
-      setDate(defaultDate || '2026-09-22');
+      setDate(defaultDate || TODAY_ISO);
       setAllDay(false);
-      setStartTime('10:00');
-      setEndTime('11:00');
+      setStartTime(defStartTime);
+      setEndTime(defEndTime);
       setCategory('personal');
       setLocation('');
       setDescription('');

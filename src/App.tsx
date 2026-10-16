@@ -15,9 +15,10 @@ import { api, setAuthUserId } from './lib/api';
 import { buildMonthGrid, TODAY_ISO } from './lib/dateUtils';
 
 export default function App() {
-  // Current calendar view (defaults to 2026-09)
-  const [currentYear, setCurrentYear] = useState(2026);
-  const [currentMonth, setCurrentMonth] = useState(9); // 1-12
+  const initialDate = new Date();
+  // Current calendar view (defaults to real current year & month)
+  const [currentYear, setCurrentYear] = useState(() => initialDate.getFullYear());
+  const [currentMonth, setCurrentMonth] = useState(() => initialDate.getMonth() + 1); // 1-12
 
   // Category filter
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -50,10 +51,10 @@ export default function App() {
   // Modals
   const [isEventModalOpen, setIsEventModalOpen] = useState(false);
   const [editingEvent, setEditingEvent] = useState<CalendarEvent | null>(null);
-  const [eventDefaultDate, setEventDefaultDate] = useState<string>('2026-09-22');
+  const [eventDefaultDate, setEventDefaultDate] = useState<string>(() => TODAY_ISO);
 
   const [isDayDetailsOpen, setIsDayDetailsOpen] = useState(false);
-  const [selectedDayDate, setSelectedDayDate] = useState<string>('2026-09-22');
+  const [selectedDayDate, setSelectedDayDate] = useState<string>(() => TODAY_ISO);
 
   const [isMobileFilterSheetOpen, setIsMobileFilterSheetOpen] = useState(false);
 
@@ -143,8 +144,9 @@ export default function App() {
   };
 
   const handleToday = () => {
-    setCurrentYear(2026);
-    setCurrentMonth(9);
+    const today = new Date();
+    setCurrentYear(today.getFullYear());
+    setCurrentMonth(today.getMonth() + 1);
   };
 
   // Jump to specific date (e.g. from chat assistant)

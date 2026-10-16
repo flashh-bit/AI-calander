@@ -2,7 +2,7 @@ import React from 'react';
 import { X, ArrowLeft, Plus, Star, Clock, MapPin, Calendar as CalendarIcon } from 'lucide-react';
 import { CalendarEvent, Holiday } from '../types';
 import { CATEGORY_CONFIG } from '../lib/categoryConfig';
-import { formatHumanDate } from '../lib/dateUtils';
+import { formatHumanDate, TODAY_ISO } from '../lib/dateUtils';
 
 interface DayDetailsModalProps {
   isOpen: boolean;
@@ -26,7 +26,7 @@ export const DayDetailsModal: React.FC<DayDetailsModalProps> = ({
   if (!isOpen) return null;
 
   const formattedDate = formatHumanDate(date);
-  const isToday = date === '2026-09-22';
+  const isToday = date === TODAY_ISO;
 
   return (
     <div

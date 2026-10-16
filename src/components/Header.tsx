@@ -49,7 +49,31 @@ export const Header: React.FC<HeaderProps> = ({
   holidaysThisMonthCount,
 }) => {
   const monthName = MONTH_NAMES[currentMonth - 1];
-  const isCurrentMonthActualToday = currentYear === 2026 && currentMonth === 9;
+
+  const [currentDateTime, setCurrentDateTime] = React.useState(new Date());
+
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentDateTime(new Date());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const actualTodayYear = currentDateTime.getFullYear();
+  const actualTodayMonth = currentDateTime.getMonth() + 1;
+  const isCurrentMonthActualToday = currentYear === actualTodayYear && currentMonth === actualTodayMonth;
+
+  const formattedLiveDate = currentDateTime.toLocaleDateString('en-US', {
+    weekday: 'short',
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+  });
+  const formattedLiveTime = currentDateTime.toLocaleTimeString('en-US', {
+    hour: 'numeric',
+    minute: '2-digit',
+    second: '2-digit',
+  });
 
   return (
     <header className="border-b border-[#e5e1d8] bg-[#fdfcf9] sticky top-0 z-30 shadow-2xs" id="calendar-header">
@@ -87,9 +111,9 @@ export const Header: React.FC<HeaderProps> = ({
                 )}
               </div>
 
-              {/* Desktop Subtitle */}
+              {/* Desktop Subtitle with live date & time */}
               <p className="text-[11px] text-[#717a84] font-medium hidden md:block tracking-tight mt-0.5">
-                Today is Tuesday, Sep 22, 2026
+                Today is {formattedLiveDate} • <span className="font-semibold text-[#4a5568]">{formattedLiveTime}</span>
               </p>
             </div>
           </div>

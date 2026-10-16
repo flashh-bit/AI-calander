@@ -103,10 +103,11 @@ export const queryLayer = {
   },
 
   /**
-   * Retrieves next upcoming holiday after reference date (defaults to 2026-09-22)
+   * Retrieves next upcoming holiday after reference date (defaults to current date)
    */
-  getNextHoliday(referenceDate = '2026-09-22') {
-    const upcoming = db.getHolidays({ startDate: referenceDate });
+  getNextHoliday(referenceDate?: string) {
+    const todayStr = new Date().toISOString().split('T')[0];
+    const upcoming = db.getHolidays({ startDate: referenceDate || todayStr });
     if (upcoming.length === 0) {
       return null;
     }

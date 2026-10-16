@@ -94,7 +94,7 @@ app.use((req, res, next) => {
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'ok',
-    currentDate: '2026-09-22',
+    currentDate: new Date().toISOString().split('T')[0],
     timestamp: new Date().toISOString(),
   });
 });

@@ -49,8 +49,10 @@ interface DatabaseSchema {
   sessions: DbSession[];
 }
 
-const DB_DIR = path.join(process.cwd(), 'data');
-const DB_FILE = path.join(DB_DIR, 'calendar_db.json');
+const IS_VERCEL = !!process.env.VERCEL;
+const SEED_FILE = path.join(process.cwd(), 'data', 'calendar_db.json');
+const DB_DIR = IS_VERCEL ? '/tmp' : path.join(process.cwd(), 'data');
+const DB_FILE = IS_VERCEL ? path.join('/tmp', 'calendar_db.json') : path.join(DB_DIR, 'calendar_db.json');
 
 export const INITIAL_HOLIDAYS: DbHoliday[] = [
   // 2026 Public, National & Festival Holidays for India
@@ -142,6 +144,13 @@ class Database {
 
   private loadData(): DatabaseSchema {
     try {
+      if (IS_VERCEL && !fs.existsSync(DB_FILE) && fs.existsSync(SEED_FILE)) {
+        try {
+          fs.copyFileSync(SEED_FILE, DB_FILE);
+        } catch (e) {
+          console.error('Failed to copy seed database to /tmp:', e);
+        }
+      }
       if (!fs.existsSync(DB_DIR)) {
         fs.mkdirSync(DB_DIR, { recursive: true });
       }

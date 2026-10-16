@@ -1,0 +1,1104 @@
+{
+  "users": [
+    {
+      "id": "user-d6fd5608-9874-402f-abca-8ab4581bb22e",
+      "email": "theflashkrishna@gmail.com",
+      "name": "Patrick Jane",
+      "passwordHash": "1ea2f89d934cb4a2af0b486736609cf9cb4bdafdc6e946e79aecb02b9d9dceb4",
+      "avatarColor": "indigo",
+      "createdAt": "2026-09-23T08:33:40.184Z"
+    }
+  ],
+  "events": [
+    {
+      "userId": "user-d6fd5608-9874-402f-abca-8ab4581bb22e",
+      "title": "design",
+      "date": "2026-09-14",
+      "startTime": "10:00",
+      "endTime": "11:00",
+      "allDay": false,
+      "category": "work",
+      "description": "very important",
+      "id": "evt-225a9047-4eb0-44d3-9638-5a808980264b",
+      "createdAt": "2026-09-23T08:34:29.992Z"
+    }
+  ],
+  "holidays": [
+    {
+      "id": "hol-in-2026-01",
+      "name": "New Year's Day",
+      "date": "2026-01-01",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Public Holiday",
+      "description": "Celebration of the first day of the Gregorian new year."
+    },
+    {
+      "id": "hol-in-2026-02",
+      "name": "Makar Sankranti / Pongal",
+      "date": "2026-01-14",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "Harvest festival celebrating the transition of the Sun into Capricorn (Makara)."
+    },
+    {
+      "id": "hol-in-2026-03",
+      "name": "Guru Gobind Singh Jayanti",
+      "date": "2026-01-20",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Observance",
+      "description": "Birth anniversary of the tenth Sikh Guru, Guru Gobind Singh Ji."
+    },
+    {
+      "id": "hol-in-2026-04",
+      "name": "Republic Day",
+      "date": "2026-01-26",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "National Holiday",
+      "description": "National Holiday commemorating the adoption of the Constitution of India in 1950."
+    },
+    {
+      "id": "hol-in-2026-05",
+      "name": "Maha Shivratri",
+      "date": "2026-02-15",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "Major Hindu festival solemnizing the convergence of Shiva and Shakti."
+    },
+    {
+      "id": "hol-in-2026-06",
+      "name": "Holi (Festival of Colors)",
+      "date": "2026-03-04",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "Spring Festival of Colors celebrating love, spring, and the triumph of good over evil."
+    },
+    {
+      "id": "hol-in-2026-07",
+      "name": "Eid-ul-Fitr (Ramzan Eid)",
+      "date": "2026-03-21",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "Major Islamic festival marking the end of Ramadan, celebrated with prayers and feasts."
+    },
+    {
+      "id": "hol-in-2026-08",
+      "name": "Ram Navami",
+      "date": "2026-03-27",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "Hindu festival celebrating the birth of Lord Rama."
+    },
+    {
+      "id": "hol-in-2026-09",
+      "name": "Mahavir Jayanti",
+      "date": "2026-03-31",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "Major religious holiday celebrating the birth of Lord Mahavira."
+    },
+    {
+      "id": "hol-in-2026-10",
+      "name": "Good Friday",
+      "date": "2026-04-03",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Public Holiday",
+      "description": "Christian holiday commemorating the passion and crucifixion of Jesus."
+    },
+    {
+      "id": "hol-in-2026-11",
+      "name": "Easter Sunday",
+      "date": "2026-04-05",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Public Holiday",
+      "description": "Celebration of the resurrection of Jesus Christ."
+    },
+    {
+      "id": "hol-in-2026-12",
+      "name": "Dr. B.R. Ambedkar Jayanti",
+      "date": "2026-04-14",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Gazetted Holiday",
+      "description": "Honoring Dr. B.R. Ambedkar, chief architect of the Indian Constitution."
+    },
+    {
+      "id": "hol-in-2026-13",
+      "name": "Buddha Purnima",
+      "date": "2026-05-01",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Gazetted Holiday",
+      "description": "Commemorating the birth, enlightenment, and death of Gautama Buddha."
+    },
+    {
+      "id": "hol-in-2026-14",
+      "name": "Eid-ul-Adha (Bakrid)",
+      "date": "2026-05-27",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "Major Islamic festival commemorating Prophet Ibrahim’s devotion."
+    },
+    {
+      "id": "hol-in-2026-15",
+      "name": "Muharram (Ashura)",
+      "date": "2026-06-26",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "First month of Islamic year, observing the martyrdom of Imam Hussain."
+    },
+    {
+      "id": "hol-in-2026-16",
+      "name": "Independence Day",
+      "date": "2026-08-15",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "National Holiday",
+      "description": "National Holiday celebrating India’s independence from British rule in 1947."
+    },
+    {
+      "id": "hol-in-2026-17",
+      "name": "Milad-un-Nabi (Id-e-Milad)",
+      "date": "2026-08-26",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "Commemorating the birth anniversary of Prophet Muhammad."
+    },
+    {
+      "id": "hol-in-2026-18",
+      "name": "Raksha Bandhan",
+      "date": "2026-08-28",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "Festival celebrating the bond of protection and affection between brothers and sisters."
+    },
+    {
+      "id": "hol-in-2026-19",
+      "name": "Krishna Janmashtami",
+      "date": "2026-09-04",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "Celebration of the birth of Lord Krishna."
+    },
+    {
+      "id": "hol-in-2026-20",
+      "name": "Ganesh Chaturthi",
+      "date": "2026-09-14",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "Grand Hindu festival celebrating the arrival of Lord Ganesha."
+    },
+    {
+      "id": "hol-in-2026-21",
+      "name": "Mahatma Gandhi Jayanti",
+      "date": "2026-10-02",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "National Holiday",
+      "description": "National Holiday commemorating the birth of Mahatma Gandhi."
+    },
+    {
+      "id": "hol-in-2026-22",
+      "name": "Maha Navami / Durga Puja",
+      "date": "2026-10-19",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "Ninth day of Navratri festival celebrating Goddess Durga."
+    },
+    {
+      "id": "hol-in-2026-23",
+      "name": "Dussehra (Vijayadashami)",
+      "date": "2026-10-20",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "Celebration of Lord Rama’s victory over Ravana, symbolizing good defeating evil."
+    },
+    {
+      "id": "hol-in-2026-24",
+      "name": "Diwali (Deepavali / Lakshmi Puja)",
+      "date": "2026-11-08",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "Grand Festival of Lights celebrating wealth, joy, and the victory of light over darkness."
+    },
+    {
+      "id": "hol-in-2026-25",
+      "name": "Govardhan Puja",
+      "date": "2026-11-09",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "Worship of Govardhan Hill and celebration of nature, honoring Lord Krishna."
+    },
+    {
+      "id": "hol-in-2026-26",
+      "name": "Bhai Dooj",
+      "date": "2026-11-10",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "Traditional celebration of the bond between sisters and brothers."
+    },
+    {
+      "id": "hol-in-2026-27",
+      "name": "Chhath Puja",
+      "date": "2026-11-15",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Festival Holiday",
+      "description": "Sacred festival dedicated to the Sun God Surya and Usha."
+    },
+    {
+      "id": "hol-in-2026-28",
+      "name": "Guru Nanak Jayanti",
+      "date": "2026-11-24",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Gazetted Holiday",
+      "description": "Celebration of the birth of Guru Nanak Dev Ji, founder of Sikhism."
+    },
+    {
+      "id": "hol-in-2026-29",
+      "name": "Christmas Day",
+      "date": "2026-12-25",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Public Holiday",
+      "description": "Celebrating the birth of Jesus Christ."
+    },
+    {
+      "id": "hol-2026-01",
+      "name": "New Year's Day",
+      "date": "2026-01-01",
+      "country": "US",
+      "type": "federal",
+      "description": "Federal holiday celebrating the start of the year."
+    },
+    {
+      "id": "hol-2026-02",
+      "name": "Martin Luther King Jr. Day",
+      "date": "2026-01-19",
+      "country": "US",
+      "type": "federal",
+      "description": "Honoring civil rights leader Dr. Martin Luther King Jr."
+    },
+    {
+      "id": "hol-2026-03",
+      "name": "Presidents' Day",
+      "date": "2026-02-16",
+      "country": "US",
+      "type": "federal",
+      "description": "Washington's Birthday federal holiday."
+    },
+    {
+      "id": "hol-2026-04",
+      "name": "Memorial Day",
+      "date": "2026-05-25",
+      "country": "US",
+      "type": "federal",
+      "description": "Remembering military personnel who died in service."
+    },
+    {
+      "id": "hol-2026-05",
+      "name": "Juneteenth National Independence Day",
+      "date": "2026-06-19",
+      "country": "US",
+      "type": "federal",
+      "description": "Commemorating the emancipation of enslaved African Americans."
+    },
+    {
+      "id": "hol-2026-06",
+      "name": "Independence Day",
+      "date": "2026-07-04",
+      "country": "US",
+      "type": "federal",
+      "description": "Celebration of the Declaration of Independence."
+    },
+    {
+      "id": "hol-2026-07",
+      "name": "Labor Day",
+      "date": "2026-09-07",
+      "country": "US",
+      "type": "federal",
+      "description": "Honoring the American labor movement and workers."
+    },
+    {
+      "id": "hol-2026-08",
+      "name": "Indigenous Peoples / Columbus Day",
+      "date": "2026-10-12",
+      "country": "US",
+      "type": "federal",
+      "description": "Federal holiday commemorating Indigenous Peoples."
+    },
+    {
+      "id": "hol-2026-09",
+      "name": "Veterans Day",
+      "date": "2026-11-11",
+      "country": "US",
+      "type": "federal",
+      "description": "Honoring all military veterans who served in the Armed Forces."
+    },
+    {
+      "id": "hol-2026-10",
+      "name": "Thanksgiving Day",
+      "date": "2026-11-26",
+      "country": "US",
+      "type": "federal",
+      "description": "Annual federal holiday of thanksgiving and feast."
+    },
+    {
+      "id": "hol-2026-11",
+      "name": "Day After Thanksgiving",
+      "date": "2026-11-27",
+      "country": "US",
+      "type": "public",
+      "description": "State and public holiday following Thanksgiving."
+    },
+    {
+      "id": "hol-2026-12",
+      "name": "Christmas Day",
+      "date": "2026-12-25",
+      "country": "US",
+      "type": "federal",
+      "description": "Federal holiday celebrating Christmas."
+    },
+    {
+      "id": "hol-2026-13",
+      "name": "New Year's Eve",
+      "date": "2026-12-31",
+      "country": "US",
+      "type": "observance",
+      "description": "Observance of the final day of the year."
+    },
+    {
+      "id": "hol-2025-01",
+      "name": "New Year's Day",
+      "date": "2025-01-01",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2025-02",
+      "name": "Martin Luther King Jr. Day",
+      "date": "2025-01-20",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2025-03",
+      "name": "Presidents' Day",
+      "date": "2025-02-17",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2025-04",
+      "name": "Memorial Day",
+      "date": "2025-05-26",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2025-05",
+      "name": "Juneteenth",
+      "date": "2025-06-19",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2025-06",
+      "name": "Independence Day",
+      "date": "2025-07-04",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2025-07",
+      "name": "Labor Day",
+      "date": "2025-09-01",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2025-08",
+      "name": "Columbus / Indigenous Peoples Day",
+      "date": "2025-10-13",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2025-09",
+      "name": "Veterans Day",
+      "date": "2025-11-11",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2025-10",
+      "name": "Thanksgiving Day",
+      "date": "2025-11-27",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2025-11",
+      "name": "Christmas Day",
+      "date": "2025-12-25",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2027-01",
+      "name": "New Year's Day",
+      "date": "2027-01-01",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2027-02",
+      "name": "Martin Luther King Jr. Day",
+      "date": "2027-01-18",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2027-03",
+      "name": "Presidents' Day",
+      "date": "2027-02-15",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2027-04",
+      "name": "Memorial Day",
+      "date": "2027-05-31",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2027-05",
+      "name": "Juneteenth",
+      "date": "2027-06-19",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2027-06",
+      "name": "Independence Day",
+      "date": "2027-07-04",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2027-07",
+      "name": "Labor Day",
+      "date": "2027-09-06",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2027-08",
+      "name": "Columbus / Indigenous Peoples Day",
+      "date": "2027-10-11",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2027-09",
+      "name": "Veterans Day",
+      "date": "2027-11-11",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2027-10",
+      "name": "Thanksgiving Day",
+      "date": "2027-11-25",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-2027-11",
+      "name": "Christmas Day",
+      "date": "2027-12-25",
+      "country": "US",
+      "type": "federal"
+    },
+    {
+      "id": "hol-in-20270101-new%20year's%20day",
+      "name": "New Year's Day",
+      "date": "2027-01-01",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270114-makar%20sankranti",
+      "name": "Makar Sankranti",
+      "date": "2027-01-14",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270115-pongal",
+      "name": "Pongal",
+      "date": "2027-01-15",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270115-guru%20govind%20sin",
+      "name": "Guru Govind Singh Jayanti",
+      "date": "2027-01-15",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270126-republic%20day",
+      "name": "Republic Day",
+      "date": "2027-01-26",
+      "country": "IN",
+      "type": "national",
+      "subType": "National Holiday",
+      "description": "Public holiday"
+    },
+    {
+      "id": "hol-in-20270209-ramadan%20start%20(",
+      "name": "Ramadan Start (tentative)",
+      "date": "2027-02-09",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance ."
+    },
+    {
+      "id": "hol-in-20270211-vasant%20panchami",
+      "name": "Vasant Panchami",
+      "date": "2027-02-11",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270219-shivaji%20jayanti",
+      "name": "Shivaji Jayanti",
+      "date": "2027-02-19",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270220-guru%20ravidas%20ja",
+      "name": "Guru Ravidas Jayanti",
+      "date": "2027-02-20",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270302-maharishi%20dayan",
+      "name": "Maharishi Dayanand Saraswati Jayanti",
+      "date": "2027-03-02",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270305-jamat%20ul-vida",
+      "name": "Jamat Ul-Vida",
+      "date": "2027-03-05",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270306-maha%20shivaratri",
+      "name": "Maha Shivaratri",
+      "date": "2027-03-06",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270310-ramzan%20id%20(tent",
+      "name": "Ramzan Id (tentative)",
+      "date": "2027-03-10",
+      "country": "IN",
+      "type": "festival",
+      "subType": "Festival",
+      "description": "Public holiday (Tentative date)"
+    },
+    {
+      "id": "hol-in-20270322-holi",
+      "name": "Holi",
+      "date": "2027-03-22",
+      "country": "IN",
+      "type": "festival",
+      "subType": "Festival",
+      "description": "Public holiday"
+    },
+    {
+      "id": "hol-in-20270322-holika%20dahana",
+      "name": "Holika Dahana",
+      "date": "2027-03-22",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270322-dolyatra",
+      "name": "Dolyatra",
+      "date": "2027-03-22",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270326-good%20friday",
+      "name": "Good Friday",
+      "date": "2027-03-26",
+      "country": "IN",
+      "type": "festival",
+      "subType": "Festival",
+      "description": "Public holiday"
+    },
+    {
+      "id": "hol-in-20270407-ugadi",
+      "name": "Ugadi",
+      "date": "2027-04-07",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270407-gudi%20padwa",
+      "name": "Gudi Padwa",
+      "date": "2027-04-07",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270407-chaitra%20sukhlad",
+      "name": "Chaitra Sukhladi",
+      "date": "2027-04-07",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270407-cheti%20chand",
+      "name": "Cheti Chand",
+      "date": "2027-04-07",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270414-ambedkar%20jayant",
+      "name": "Ambedkar Jayanti",
+      "date": "2027-04-14",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270414-vishu",
+      "name": "Vishu",
+      "date": "2027-04-14",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270414-mesadi",
+      "name": "Mesadi",
+      "date": "2027-04-14",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270414-vaisakhi",
+      "name": "Vaisakhi",
+      "date": "2027-04-14",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270415-rama%20navami",
+      "name": "Rama Navami",
+      "date": "2027-04-15",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Public Holiday",
+      "description": "Public holiday"
+    },
+    {
+      "id": "hol-in-20270415-bahag%20bihu%20(ass",
+      "name": "Bahag Bihu (Assam)",
+      "date": "2027-04-15",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270415-vaisakhadi%20(ben",
+      "name": "Vaisakhadi (Bengal)",
+      "date": "2027-04-15",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270419-mahavir%20jayanti",
+      "name": "Mahavir Jayanti",
+      "date": "2027-04-19",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Public Holiday",
+      "description": "Public holiday"
+    },
+    {
+      "id": "hol-in-20270509-birthday%20of%20rab",
+      "name": "Birthday of Rabindranath",
+      "date": "2027-05-09",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270517-bakrid%20(tentati",
+      "name": "Bakrid (tentative)",
+      "date": "2027-05-17",
+      "country": "IN",
+      "type": "festival",
+      "subType": "Festival",
+      "description": "Public holiday (Tentative date)"
+    },
+    {
+      "id": "hol-in-20270520-buddha%20purnima",
+      "name": "Buddha Purnima",
+      "date": "2027-05-20",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Public Holiday",
+      "description": "Public holiday"
+    },
+    {
+      "id": "hol-in-20270616-muharram%2fashura",
+      "name": "Muharram/Ashura (tentative)",
+      "date": "2027-06-16",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Public Holiday",
+      "description": "Public holiday (Tentative date)"
+    },
+    {
+      "id": "hol-in-20270705-rath%20yatra",
+      "name": "Rath Yatra",
+      "date": "2027-07-05",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270815-independence%20da",
+      "name": "Independence Day",
+      "date": "2027-08-15",
+      "country": "IN",
+      "type": "national",
+      "subType": "National Holiday",
+      "description": "Public holiday"
+    },
+    {
+      "id": "hol-in-20270815-parsi%20new%20year",
+      "name": "Parsi New Year",
+      "date": "2027-08-15",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270815-milad%20un-nabi%20(",
+      "name": "Milad un-Nabi (tentative)",
+      "date": "2027-08-15",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Public Holiday",
+      "description": "Public holiday (Tentative date)"
+    },
+    {
+      "id": "hol-in-20270817-raksha%20bandhan",
+      "name": "Raksha Bandhan",
+      "date": "2027-08-17",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270825-janmashtami%20(sm",
+      "name": "Janmashtami (Smarta)",
+      "date": "2027-08-25",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270825-janmashtami",
+      "name": "Janmashtami",
+      "date": "2027-08-25",
+      "country": "IN",
+      "type": "festival",
+      "subType": "Festival",
+      "description": "Public holiday"
+    },
+    {
+      "id": "hol-in-20270904-ganesh%20chaturth",
+      "name": "Ganesh Chaturthi",
+      "date": "2027-09-04",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270912-onam",
+      "name": "Onam",
+      "date": "2027-09-12",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20270930-first%20day%20of%20sh",
+      "name": "First Day of Sharad Navratri",
+      "date": "2027-09-30",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20271002-mahatma%20gandhi%20",
+      "name": "Mahatma Gandhi Jayanti",
+      "date": "2027-10-02",
+      "country": "IN",
+      "type": "national",
+      "subType": "National Holiday",
+      "description": "Public holiday"
+    },
+    {
+      "id": "hol-in-20271005-first%20day%20of%20du",
+      "name": "First Day of Durga Puja Festivities",
+      "date": "2027-10-05",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20271006-maha%20saptami",
+      "name": "Maha Saptami",
+      "date": "2027-10-06",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20271007-maha%20ashtami",
+      "name": "Maha Ashtami",
+      "date": "2027-10-07",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20271008-maha%20navami",
+      "name": "Maha Navami",
+      "date": "2027-10-08",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20271009-dussehra",
+      "name": "Dussehra",
+      "date": "2027-10-09",
+      "country": "IN",
+      "type": "festival",
+      "subType": "Festival",
+      "description": "Public holiday"
+    },
+    {
+      "id": "hol-in-20271015-maharishi%20valmi",
+      "name": "Maharishi Valmiki Jayanti",
+      "date": "2027-10-15",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20271018-karaka%20chaturth",
+      "name": "Karaka Chaturthi",
+      "date": "2027-10-18",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20271028-naraka%20chaturda",
+      "name": "Naraka Chaturdasi",
+      "date": "2027-10-28",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20271029-diwali%2fdeepaval",
+      "name": "Diwali/Deepavali",
+      "date": "2027-10-29",
+      "country": "IN",
+      "type": "festival",
+      "subType": "Festival",
+      "description": "Public holiday"
+    },
+    {
+      "id": "hol-in-20271030-govardhan%20puja",
+      "name": "Govardhan Puja",
+      "date": "2027-10-30",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20271031-bhai%20duj",
+      "name": "Bhai Duj",
+      "date": "2027-10-31",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20271104-chhat%20puja%20(pra",
+      "name": "Chhat Puja (Pratihar Sashthi/Surya Sashthi)",
+      "date": "2027-11-04",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20271114-guru%20nanak%20jaya",
+      "name": "Guru Nanak Jayanti",
+      "date": "2027-11-14",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Public Holiday",
+      "description": "Public holiday"
+    },
+    {
+      "id": "hol-in-20271124-guru%20tegh%20bahad",
+      "name": "Guru Tegh Bahadur's Martyrdom Day",
+      "date": "2027-11-24",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20271212-hazarat%20ali's%20b",
+      "name": "Hazarat Ali's Birthday",
+      "date": "2027-12-12",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20271224-christmas%20eve",
+      "name": "Christmas Eve",
+      "date": "2027-12-24",
+      "country": "IN",
+      "type": "observance",
+      "subType": "Observance",
+      "description": "Observance"
+    },
+    {
+      "id": "hol-in-20271225-christmas",
+      "name": "Christmas",
+      "date": "2027-12-25",
+      "country": "IN",
+      "type": "holiday",
+      "subType": "Public Holiday",
+      "description": "Public holiday"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "sess_6255efc3bcfc45eca68871ad43a80b89_muduj3oc",
+      "userId": "user-d6fd5608-9874-402f-abca-8ab4581bb22e",
+      "createdAt": "2026-09-23T08:33:40.188Z",
+      "expiresAt": "2026-12-22T08:33:40.188Z"
+    }
+  ]
+}

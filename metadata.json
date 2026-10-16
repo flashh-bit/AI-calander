@@ -1,0 +1,6 @@
+{
+  "name": "Calendar",
+  "description": "Full-stack calendar web app with event management, public holidays, and an integrated AI chat assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

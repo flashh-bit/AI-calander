@@ -1,4 +1,4 @@
-import type { DbHoliday } from './db.ts';
+import type { DbHoliday } from './db';
 
 // Official Google Calendar Public Holiday ICS Feeds
 const GOOGLE_CALENDAR_FEEDS: Record<string, string> = {

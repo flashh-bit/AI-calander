@@ -1,14 +1,5 @@
 {
-  "users": [
-    {
-      "id": "user-d6fd5608-9874-402f-abca-8ab4581bb22e",
-      "email": "theflashkrishna@gmail.com",
-      "name": "Patrick Jane",
-      "passwordHash": "1ea2f89d934cb4a2af0b486736609cf9cb4bdafdc6e946e79aecb02b9d9dceb4",
-      "avatarColor": "indigo",
-      "createdAt": "2026-09-23T08:33:40.184Z"
-    }
-  ],
+  "users": [],
   "events": [
     {
       "userId": "user-d6fd5608-9874-402f-abca-8ab4581bb22e",

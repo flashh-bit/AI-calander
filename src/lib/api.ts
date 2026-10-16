@@ -117,6 +117,22 @@ function getHeaders(): HeadersInit {
   return headers;
 }
 
+async function parseResponse<T = any>(res: Response, fallbackError: string): Promise<T> {
+  const text = await res.text();
+  let data: any = null;
+  try {
+    data = text ? JSON.parse(text) : {};
+  } catch {
+    if (!res.ok) {
+      throw new Error(text && text.length < 200 ? text : fallbackError);
+    }
+  }
+  if (!res.ok) {
+    throw new Error(data?.error || data?.message || fallbackError);
+  }
+  return data as T;
+}
+
 export const api = {
   getCachedUser,
 
@@ -135,7 +151,7 @@ export const api = {
         if (cached) return cached;
         throw new Error('Failed to fetch user');
       }
-      const user: User = await res.json();
+      const user: User = await parseResponse(res, 'Failed to fetch user');
       setSession(currentSessionToken, user);
       return user;
     } catch {
@@ -146,8 +162,7 @@ export const api = {
 
   async getUsers(): Promise<User[]> {
     const res = await fetch('/api/auth/users', { headers: getHeaders() });
-    if (!res.ok) throw new Error('Failed to fetch users');
-    return res.json();
+    return parseResponse<User[]>(res, 'Failed to fetch users');
   },
 
   async loginUser(email: string, password: string): Promise<User> {
@@ -156,10 +171,7 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: email.trim(), password: password.trim() }),
     });
-    const data = await res.json();
-    if (!res.ok) {
-      throw new Error(data.error || 'Failed to log in');
-    }
+    const data = await parseResponse<any>(res, 'Failed to log in');
 
     const user: User = data.user || {
       id: data.id,
@@ -179,10 +191,7 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: email.trim(), password: password.trim(), name: name?.trim() }),
     });
-    const data = await res.json();
-    if (!res.ok) {
-      throw new Error(data.error || 'Failed to register');
-    }
+    const data = await parseResponse<any>(res, 'Failed to register');
 
     const user: User = data.user || {
       id: data.id,
@@ -216,8 +225,7 @@ export const api = {
     if (month) params.set('month', month.toString());
     if (country && country !== 'all') params.set('country', country);
     const res = await fetch(`/api/holidays?${params.toString()}`, { headers: getHeaders() });
-    if (!res.ok) throw new Error('Failed to fetch holidays');
-    return res.json();
+    return parseResponse<Holiday[]>(res, 'Failed to fetch holidays');
   },
 
   async getEvents(startDate?: string, endDate?: string, category?: string, userId?: string): Promise<CalendarEvent[]> {
@@ -228,8 +236,7 @@ export const api = {
     const targetUser = userId || currentAuthUserId;
     if (targetUser) params.set('userId', targetUser);
     const res = await fetch(`/api/events?${params.toString()}`, { headers: getHeaders() });
-    if (!res.ok) throw new Error('Failed to fetch events');
-    return res.json();
+    return parseResponse<CalendarEvent[]>(res, 'Failed to fetch events');
   },
 
   async createEvent(eventData: Omit<CalendarEvent, 'id' | 'userId' | 'createdAt'>): Promise<CalendarEvent> {
@@ -238,8 +245,7 @@ export const api = {
       headers: getHeaders(),
       body: JSON.stringify(eventData),
     });
-    if (!res.ok) throw new Error('Failed to create event');
-    return res.json();
+    return parseResponse<CalendarEvent>(res, 'Failed to create event');
   },
 
   async updateEvent(id: string, updates: Partial<CalendarEvent>): Promise<CalendarEvent> {
@@ -248,8 +254,7 @@ export const api = {
       headers: getHeaders(),
       body: JSON.stringify(updates),
     });
-    if (!res.ok) throw new Error('Failed to update event');
-    return res.json();
+    return parseResponse<CalendarEvent>(res, 'Failed to update event');
   },
 
   async deleteEvent(id: string): Promise<void> {
@@ -257,7 +262,7 @@ export const api = {
       method: 'DELETE',
       headers: getHeaders(),
     });
-    if (!res.ok) throw new Error('Failed to delete event');
+    return parseResponse<void>(res, 'Failed to delete event');
   },
 
   async sendChatMessage(message: string, history: Array<{ sender: 'user' | 'assistant'; text: string }>): Promise<{
@@ -270,7 +275,6 @@ export const api = {
       headers: getHeaders(),
       body: JSON.stringify({ message, history }),
     });
-    if (!res.ok) throw new Error('Failed to send message');
-    return res.json();
+    return parseResponse<any>(res, 'Failed to send message');
   }
 };

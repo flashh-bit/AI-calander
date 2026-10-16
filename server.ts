@@ -72,6 +72,24 @@ function getAuthUser(req: express.Request): DbUser | null {
 
 // ================= API ROUTES =================
 
+// URL normalization for serverless / Vercel rewrites
+app.use((req, res, next) => {
+  const origPath = (req.headers['x-matched-path'] as string) || (req.headers['x-forwarded-uri'] as string);
+  if (origPath && origPath.startsWith('/api/')) {
+    req.url = origPath;
+  } else if (req.url && !req.url.startsWith('/api') && (
+    req.url.startsWith('/auth') ||
+    req.url.startsWith('/events') ||
+    req.url.startsWith('/holidays') ||
+    req.url.startsWith('/health') ||
+    req.url.startsWith('/query') ||
+    req.url.startsWith('/chat')
+  )) {
+    req.url = '/api' + (req.url.startsWith('/') ? req.url : '/' + req.url);
+  }
+  next();
+});
+
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({
@@ -367,6 +385,12 @@ app.post('/api/chat', async (req, res) => {
       error: String(error),
     });
   }
+});
+
+// Global error handler
+app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
+  console.error('Unhandled server error:', err);
+  res.status(500).json({ error: err?.message || 'Internal server error' });
 });
 
 // ================= VITE / STATIC SERVING =================
